@@ -1,0 +1,150 @@
+.catalog {
+	padding: 122px 0 131px;
+	position: relative;
+	&__title {
+		margin-bottom: 40px;
+	}
+}
+
+
+.catalog__slider {
+	.slick-arrow {
+		width: 46px;
+		height: 46px;
+		background-color: $white;
+		border-radius: 50%;
+		cursor: pointer;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		top: -53px;
+		right: 0;
+		z-index: 5;
+		svg {
+			fill: #000;
+		}
+		&::before {
+			content: '';
+		}
+		&:hover {
+			background-color: $white;
+		}
+		&.slick-disabled {
+			background-color: $white;
+			svg {
+				fill: #cbcbcb;
+			}
+		}
+		&.slick-prev {
+			right: 66px;
+			left: auto;
+			background-color: $white;
+		}
+
+	}
+	.slick-list, .slick-track {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.catalog__slider-item {
+  margin: 0 auto;
+  display: grid;
+  // grid-template-columns: 296px 296px 296px 296px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: 280px 280px 280px;
+  grid-gap: 22px;
+  .item__product {
+	  object-fit: cover;
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 10px;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  // padding: 30px 0;
+	}
+
+	.product__text {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.4;
+		text-transform: uppercase;
+		color: $white;
+		margin: 0;
+		text-align: center;
+		margin-top: 30px;
+		padding: 0 48px;
+
+	}
+
+	.item--yelow {
+		background-color: #ECBC1F;
+		 grid-row: 1;
+	}
+
+	.item--red {
+		background-color: #CD2024;
+		grid-row: 1 / 3;
+	}
+
+	.item--purple {
+		background-color: #B85AA9;
+		grid-row: 1;
+		img {
+			width: 237px;
+		}
+	}
+
+	.item-blue {
+		background-color: #34B5E8;
+		grid-row: 1;
+	}
+
+	.item-green {
+		background-color: #8DB85F;
+		grid-row: 2;
+	}
+
+	.item--orange {
+		background-color: #F28E00;
+		grid-row: 2;
+	}
+
+	.item--pink {
+		background-color: #ED2844;
+		grid-row: 2;
+	}
+
+	.item--pink2 {
+		background-color: #ED2844;
+		grid-row: 3;
+	}
+
+	.item--orange2 {
+		background-color: #F28E00;
+		grid-row: 3;
+	}
+
+	.item-green2 {
+		background-color: #8DB85F;
+		grid-column: 3/5;
+	}
+
+	.slick-list, .slick-track {
+		height: 100%;
+		// width: 100%!important;
+	}
+
+	&.slick-slide {
+		display: grid;
+		// width: 100%!important;
+	}
+	
+}
+
+
+
+

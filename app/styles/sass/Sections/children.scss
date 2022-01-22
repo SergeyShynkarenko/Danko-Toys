@@ -1,0 +1,30 @@
+.childrens__product {
+
+
+	&-inner {
+		padding: 100px 0;
+		width: 826px;
+		margin: 0 auto;
+	}
+	&-title {
+		margin-bottom: 25px;
+		color: #212121;
+	}
+	&-text {
+		font-size: 12px;
+		line-height: 1.5;
+		letter-spacing: 0.02em;
+		p {
+			margin-bottom: 25px;
+		}
+	}
+	.childrens__product-tex {
+		margin-bottom: 25px;
+	}
+	.product-text__title {
+		font-size: 16px;
+		font-weight: 800;
+		color: #3C3C3C;
+		margin-bottom: 25px;
+	}
+}

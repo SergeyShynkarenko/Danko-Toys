@@ -2,91 +2,470 @@
 <!--#include virtual="/parts/header.html" -->
 
 <section class="menu section-bg">
+	<div class="menu-bg"></div>
 	<div class="container">
 		<div class="menu__inner">
 
 			<div class="sidebar">
-				<div class="sidebar__title">Каталог товаров</div>
+
+				<div class="sidebar__box">
+					<div class="box__hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="box__title">Каталог товаров</div>
+				</div>
 
 				<ul class="sidebar__list">
 					<li class="sidebar__list-item">
 						<a class="sidebar__list-link" href="#">
-							<img src="images/dist/star.svg" alt="Star">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#star"></use>
+							</svg>
 							<span>Новинки</span>
-						</a>
+						</a>	
+						<svg class="arrow">
+							<use xlink:href="images/sprite.svg#arrow"></use>
+						</svg>				
 					</li>
+
 					<li class="sidebar__list-item">
+
 						<a class="sidebar__list-link" href="#">
-							<img src="images/dist/paint.svg" alt="Star">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#paint"></use>	
+							</svg>
 							<span>Наборы для творчества</span>
 						</a>
+						<svg class="arrow">
+							<use xlink:href="images/sprite.svg#arrow"></use>
+						</svg>
 					</li>
+
 					<li class="sidebar__list-item">
 						<a class="sidebar__list-link" href="#">
-							<img src="images/dist/slimes.svg" alt="Star">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#slimes"></use>	
+							</svg>
 							<span>Слаймы</span>
 						</a>
+						<svg class="arrow">
+							<use xlink:href="images/sprite.svg#arrow"></use>
+						</svg>
 					</li>
+
 					<li class="sidebar__list-item">
 						<a class="sidebar__list-link" href="#">
-							<img src="images/dist/bubbles.svg" alt="Star">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#bubbles"></use>
+							</svg>
 							<span>Мыльные пузыри</span>
 						</a>
+						<svg class="arrow">
+							<use xlink:href="images/sprite.svg#arrow"></use>
+						</svg>
 					</li>
+
 					<li class="sidebar__list-item">
 						<a class="sidebar__list-link" href="#">
-							<img src="images/dist/games.svg" alt="Star">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#games"></use>
+							</svg>
 							<span>Настольные игры</span>
 						</a>
+						<svg class="arrow">
+							<use xlink:href="images/sprite.svg#arrow"></use>
+						</svg>
 					</li>
+
 					<li class="sidebar__list-item">
 						<a class="sidebar__list-link" href="#">
-							<img src="images/dist/puzzles.svg" alt="Star">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#puzzles"></use>
+							</svg>
 							<span>Пазлы</span>
 						</a>
+						<svg class="arrow">
+							<use xlink:href="images/sprite.svg#arrow"></use>
+						</svg>
 					</li>
+
 					<li class="sidebar__list-item">
 						<a class="sidebar__list-link" href="#">
-							<img src="images/dist/boks.svg" alt="Star">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#boks"></use>
+							</svg>
 							<span>Боксёрские наборы</span>
 						</a>
+						<svg class="arrow">
+							<use xlink:href="images/sprite.svg#arrow"></use>
+						</svg>
 					</li>
+
 					<li class="sidebar__list-item">
 						<a class="sidebar__list-link" href="#">
-							<img src="images/dist/toys.svg" alt="Star">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#toys"></use>
+							</svg>
 							<span>Мягкие игрушки</span>
 						</a>
+						<svg class="arrow">
+							<use xlink:href="images/sprite.svg#arrow"></use>
+						</svg>
 					</li>
 				</ul>
 			</div>
 
-			<nav class="menu__nav">
-				<ul class="menu__list">
-					<li class="menu__list-item">
-						<a href="" class="menu__list-link">О компании</a>
-					</li>
-					<li class="menu__list-item">
-						<a href="" class="menu__list-link">Покупателям
-						</a>
-					</li>
-					<li class="menu__list-item">
-						<a href="" class="menu__list-link">Новости
-						</a>
-					</li>
-					<li class="menu__list-item">
-						<a href="" class="menu__list-link">Вакансии
-						</a>
-					</li>
-					<li class="menu__list-item">
-						<a href="" class="menu__list-link">Контакты
-						</a>
-					</li>
-				</ul>
-			</nav>
+			<div class="menu__box">
+				<nav class="menu__nav">
 
+					<div class="hamburger">
+						<p class="hamburger__text">Меню</p>
+						<div class="sidebar__hamburger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+
+					<ul class="menu__list">
+
+						<ul class="header__lang">
+							<li class="lang__item">
+								<a class="lang__link" href="#">uk</a>
+							</li>
+							<li class="lang__item">
+								<a class="lang__link" href="#">ru</a>
+							</li>
+						</ul>
+
+						<li class="menu__list-item">
+							<a href="#" class="menu__list-link">О компании</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__list-link">Покупателям
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__list-link">Новости
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__list-link">Вакансии
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__list-link">Контакты
+							</a>
+						</li>
+
+						<li class="header__phone">
+							<a class="phone__number" href="tel:+380678850888">+38 (067) 885 08 88</a>
+							<a class="phone__text" href="#">Заказать обратный звонок</a>
+						</li>
+
+					</ul>
+				</nav>
+
+				<div class="menu__slider">
+					<div class="menu__slider-item">
+						<div class="slider__inner">
+							<div class="item__description">
+								<p class="description__text">Новинка!  Серия теста  «Шеф-повар»!</p>
+								<a class="description__btn button" href="#">
+									<span class="btn__text">На страницу товара</span>
+									<img class="description__img" src="images/dist/arrow-btn.svg" alt="Arrow">
+								</a>
+							</div>
+
+							<img class="item__img" src="images/dist/slider.png" alt="Toys">					
+						</div>
+					</div>
+
+					<div class="menu__slider-item">
+						<div class="slider__inner">
+							<div class="item__description">
+								<p class="description__text">Новинка! Серия теста «Шеф-повар»!</p>
+								<a class="description__btn button" href="#">
+									<span class="btn__text">На страницу товара</span>
+									<img class="description__img" src="images/dist/arrow-btn.svg" alt="Arrow">
+								</a>
+							</div>
+
+							<img class="item__img" src="images/dist/slider.png" alt="Toys">					
+						</div>
+					</div>
+
+					<div class="menu__slider-item">
+
+						<div class="item__description">
+							<p class="description__text">Новинка! Серия теста «Шеф-повар»!</p>
+							<a class="description__btn button" href="#">
+								<span class="btn__text">На страницу товара</span>
+								<img class="description__img" src="images/dist/arrow-btn.svg" alt="Arrow">
+							</a>
+						</div>
+
+						<img class="item__img" src="images/dist/slider.png" alt="Toys">					
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
 
+<section class="catalog section-bg">
+	<div class="container">
+		<div class="catalog__title title">Каталог товаров</div>
+		<div class="catalog__wrapper">
+			<div class="catalog__slider">
+
+				<div class="catalog__slider-item">
+					<div class="item__product item--yelow">
+						<p class="product__text">НАБОРЫ ДЛЯ ТВОРЧЕСТВА</p>
+						<img src="images/dist/product-1.png" alt="">
+					</div>
+					<div class="item__product item--red">
+						<p class="product__text">МЫЛЬНЫЕ ПУЗЫРИ</p>
+						<img src="images/dist/product-2.png" alt="">
+					</div>
+					<div class="item__product item--purple">
+						<p class="product__text">НАСТОЛЬНЫЕ ИГРЫ</p>
+						<img src="images/dist/product-3.png" alt="">
+					</div>
+					<div class="item__product item-blue">
+						<p class="product__text">боксёрские комплекты</p>
+						<img src="images/dist/product-1.png" alt="">
+					</div>
+					<div class="item__product item-green">
+						<p class="product__text">СЛАЙМЫ</p>
+						<img src="images/dist/product-5.png" alt="">
+					</div>
+					<div class="item__product item--orange">
+						<p class="product__text">ИГРУШКИ</p>
+						<img src="images/dist/product-6.png" alt="">
+					</div>
+					<div class="item__product item--pink">
+						<p class="product__text">пазлы</p>
+						<img src="images/dist/product-7.png" alt="">
+					</div>
+					<div class="item__product item--pink2">
+						<p class="product__text">пазлы</p>
+						<img src="images/dist/product-8.png" alt="">
+					</div>
+					<div class="item__product item--orange2">
+						<p class="product__text">ИГРУШКИ</p>
+						<img src="images/dist/product-6.png" alt="">
+					</div>
+					<div class="item__product item-green2">
+						<p class="product__text">СЛАЙМЫ</p>
+						<img src="images/dist/product-10.png" alt="">
+					</div>
+				</div>
+
+				<div class="catalog__slider-item">
+					<div class="item__product item--yelow">
+						<p class="product__text">НАБОРЫ ДЛЯ ТВОРЧЕСТВА</p>
+						<img src="images/dist/product-1.png" alt="">
+					</div>
+					<div class="item__product item--red">
+						<p class="product__text">МЫЛЬНЫЕ ПУЗЫРИ</p>
+						<img src="images/dist/product-2.png" alt="">
+					</div>
+					<div class="item__product item--purple">
+						<p class="product__text">НАСТОЛЬНЫЕ ИГРЫ</p>
+						<img src="images/dist/product-3.png" alt="">
+					</div>
+					<div class="item__product item-blue">
+						<p class="product__text">боксёрские комплекты</p>
+						<img src="images/dist/product-1.png" alt="">
+					</div>
+					<div class="item__product item-green">
+						<p class="product__text">СЛАЙМЫ</p>
+						<img src="images/dist/product-5.png" alt="">
+					</div>
+					<div class="item__product item--orange">
+						<p class="product__text">ИГРУШКИ</p>
+						<img src="images/dist/product-6.png" alt="">
+					</div>
+					<div class="item__product item--pink">
+						<p class="product__text">пазлы</p>
+						<img src="images/dist/product-7.png" alt="">
+					</div>
+					<div class="item__product item--pink2">
+						<p class="product__text">пазлы</p>
+						<img src="images/dist/product-8.png" alt="">
+					</div>
+					<div class="item__product item--orange2">
+						<p class="product__text">ИГРУШКИ</p>
+						<img src="images/dist/product-6.png" alt="">
+					</div>
+					<div class="item__product item-green2">
+						<p class="product__text">СЛАЙМЫ</p>
+						<img src="images/dist/product-10.png" alt="">
+					</div>
+				</div>
+
+				<div class="catalog__slider-item">
+					<div class="item__product item--yelow">
+						<p class="product__text">НАБОРЫ ДЛЯ ТВОРЧЕСТВА</p>
+						<img src="images/dist/product-1.png" alt="">
+					</div>
+					<div class="item__product item--red">
+						<p class="product__text">МЫЛЬНЫЕ ПУЗЫРИ</p>
+						<img src="images/dist/product-2.png" alt="">
+					</div>
+					<div class="item__product item--purple">
+						<p class="product__text">НАСТОЛЬНЫЕ ИГРЫ</p>
+						<img src="images/dist/product-3.png" alt="">
+					</div>
+					<div class="item__product item-blue">
+						<p class="product__text">боксёрские комплекты</p>
+						<img src="images/dist/product-1.png" alt="">
+					</div>
+					<div class="item__product item-green">
+						<p class="product__text">СЛАЙМЫ</p>
+						<img src="images/dist/product-5.png" alt="">
+					</div>
+					<div class="item__product item--orange">
+						<p class="product__text">ИГРУШКИ</p>
+						<img src="images/dist/product-6.png" alt="">
+					</div>
+					<div class="item__product item--pink">
+						<p class="product__text">пазлы</p>
+						<img src="images/dist/product-7.png" alt="">
+					</div>
+					<div class="item__product item--pink2">
+						<p class="product__text">пазлы</p>
+						<img src="images/dist/product-8.png" alt="">
+					</div>
+					<div class="item__product item--orange2">
+						<p class="product__text">ИГРУШКИ</p>
+						<img src="images/dist/product-6.png" alt="">
+					</div>
+					<div class="item__product item-green2">
+						<p class="product__text">СЛАЙМЫ</p>
+						<img src="images/dist/product-10.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- <section class="product__card section-bg">
+	<div class="container">
+		<div class="card__title title">ПОСЛЕДНИЕ ПОСТУПЛЕНИЯ</div>
+		<div class="card__slider">
+
+			<div class="card__slider-item">
+				<div class="item__content">
+					<img class="content__img" src="images/dist/card-1.png" alt="Pony Love">
+					<div class="content__info">
+						<p class="info__title">Pony Love</p>
+						<p class="info__text">«Pony Love» — это невероятное сочетание всего, что так нравится детям.</p>
+					</div>
+				</div>
+				<div class="item__btn">
+					<a class="btn__card button" href="#">Подробнее</a>
+				</div>
+			</div>
+
+			<div class="card__slider-item">
+				<div class="item__sale">
+					<span>Новинка</span>
+					<span>Акция</span>
+				</div>
+				<div class="item__content">
+					<img class="content__img" src="images/dist/card-2.png" alt="Pony Love">
+					<div class="content__info">
+						<p class="info__title">Pony Love</p>
+						<p class="info__text">«Pony Love» — это невероятное сочетание всего, что так нравится детям.</p>
+					</div>
+				</div>
+				<div class="item__btn">
+					<a class="btn__card button" href="#">Подробнее</a>
+				</div>
+			</div>
+
+
+			<div class="card__slider-item toys-item">
+				<div class="item__content">
+					<img class="content__img" src="images/dist/card-3.png" alt="Pony Love">
+					<div class="content__info">
+						<p class="info__title">Pony Love</p>
+						<p class="info__text">«Pony Love» — это невероятное сочетание всего, что так нравится детям.</p>
+					</div>
+				</div>
+				<div class="item__btn">
+					<a class="btn__card button" href="#">Подробнее</a>
+				</div>
+			</div>
+
+
+			<div class="card__slider-item">
+				<div class="item__sale">
+					<span class="sale">Акция</span>
+				</div>
+				<div class="item__content">
+					<img class="content__img" src="images/dist/card-4.png" alt="Pony Love">
+					<div class="content__info">
+						<p class="info__title">Pony Love</p>
+						<p class="info__text">«Pony Love» — это невероятное сочетание всего, что так нравится детям.</p>
+					</div>
+				</div>
+				<div class="item__btn">
+					<a class="btn__card button" href="#">Подробнее</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+-->
+<!-- <section class="about section-bg">
+	<div class="container">
+		<div class="about__inner">
+			<div class="about__info">
+				<div class="about__info-title title">О компании «Danko Toys»</div>
+				<div class="about__info-text">
+					<p>Существует на рынке игрушек более десяти лет, эффективно развивая и активно расширяя информационное поле своей деятельности.
+					</p>
+					<p>Маркетинговые цели нашего коллектива совпадают со стремлением сделать мир ребенка ярче и интереснее, не забывая при этом о его творческом, физическом и эмоциональном развитии.</p>
+					<p>Игрушки, предлагаемые нашей компанией не только привлекательный внешний вид и выполняют развлекательную функцию, но также активно развивают ребенка</p>
+				</div>
+
+				<a class="about__info-btn button" href="#">
+					<span class="btn__text">Подробнее о компании</span>
+					<img class="btn__img" src="images/dist/arrow-btn.svg" alt="Arrow">
+				</a>
+
+			</div>
+			<img class="about__img" src="images/dist/about.png" alt="About">
+		</div>
+	</div>
+</section> -->
+
+<!-- <section class="childrens__product section-bg">
+
+	<div class="childrens__product-inner">
+		<div class="childrens__product-title title">
+			Товары для детей в интернет-магазине danko toys
+		</div>
+		<div class="childrens__product-text">
+			<p>Разнообразный и богатый опыт говорит нам, что экономическая повестка сегодняшнего дня, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для стандартных подходов. Приятно, граждане, наблюдать, как действия представителей оппозиции указаны как претенденты на роль ключевых факторов. Тщательные исследования конкурентов призывают нас к новым свершениям, которые, в свою очередь, должны быть объективно рассмотрены соответствующими инстанциями. Высококачественный прототип будущего проекта требует анализа новых предложений. Не следует, однако, забывать, что сплочённость команды профессионалов, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для распределения внутренних резервов и ресурсов. Мы вынуждены отталкиваться от того, что семантический разбор внешних противодействий обеспечивает широкому кругу (специалистов) участие в формировании кластеризации усилий.
+			</p>
+			<p>Есть над чем задуматься: реплицированные с зарубежных источников, современные исследования будут объявлены нарушающими общечеловеческие нормы этики и морали. Сделанные на базе интернет-аналитики выводы набирают популярность среди определенных слоев населения, а значит, должны быть указаны как претенденты на роль ключевых факторов.</p>
+
+			<div class="product-text__title">Товары для детейв интернет-магазине «Danko toys»</div>
+			<p>Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности создаёт предпосылки для анализа существующих паттернов поведения. Высокотехнологичная концепция общественного уклада способствует повышению качества переосмысления внешнеэкономических политик. Учитывая ключевые сценарии поведения, высокотехнологичная концепция общественного уклада создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса первоочередных требований. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: экономическая повестка сегодняшнего дня способствует подготовке и реализации экспериментов, поражающих по своей масштабности и грандиозности. Современные технологии достигли такого уровня, что семантический разбор внешних противодействий, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для благоприятных перспектив. В частности, постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает актуальность инновационных методов управления процессами.</p>
+		</div>
+</div>
+
+</section> -->
 
 <!--#include virtual="/parts/footer.html" -->
+
+
+
+

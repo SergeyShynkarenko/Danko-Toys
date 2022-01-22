@@ -1,0 +1,105 @@
+.product__card {
+
+	.card__slider {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		&-item {
+			height: 443px;
+			transition: all .3s;
+			border-radius: 20px;
+			&:hover {
+				background-color: $white;
+				box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+				
+				.item__content {
+					box-shadow: none;
+				}
+				.item__btn {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+			&.toys-item {
+				.item__content {
+					padding: 100px 21px 20px 21px;
+				}
+				.content__info {
+					margin-top: 98px;
+				}
+			}
+		}
+
+		.item__sale {
+			position: relative;
+			span {
+				position: absolute;
+				left: 0;
+				top: 23px;
+				font-size: 14px;
+				line-height: 2;
+				font-weight: 600;
+				color: $white;
+				z-index: 2;
+				padding: 3px 20px 3px 17px;
+
+				&::before {
+					content: "";
+					background-color: #98C000;
+					left: 0;
+					width: 102px;
+					height: 34px;
+					position: absolute;;
+    			border-radius: 0 100px 100px 0;
+    			z-index: -1;
+				}
+				&:last-child {
+					top: 64px;
+					&::before {
+						content: "";
+						background-color: #E33C46;
+					}
+				}
+			}
+		}
+
+		.item__content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 296px;
+			height: 380px;
+			padding: 58px 21px 20px 21px;
+			background-color: $white;
+			box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+			border-radius: 20px;
+			transition: all .3s;
+		}
+
+		.item__btn {
+			text-align: center;
+			opacity: 0;
+			visibility: hidden;
+			transition: all .6s;
+			.btn__card {
+				padding: 12px 83.5px;
+			}
+		}
+
+		.content__info {
+			text-align: center;
+			margin-top: 56px;
+
+			.info__title {
+				margin-bottom: 10px;
+			}
+
+			.info__text {
+				margin: 0;
+				font-size: 12px;
+				line-height: 18px;
+				letter-spacing: 0.02em;
+			}
+		}
+	}
+}

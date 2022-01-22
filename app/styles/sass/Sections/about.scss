@@ -1,0 +1,33 @@
+.about {
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		background-color: $white;
+		padding: 50px 71px 35px 106px;
+		box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+		border-radius: 20px;
+	}
+
+	&__info {
+		width: 613px;
+		&-title {
+			margin-bottom: 30px;
+		}
+		&-text {
+		 margin-bottom: 30px;
+		 letter-spacing: 0.02em;
+
+		 p {
+		 	margin-bottom: 30px;
+		 }
+		}
+		&-btn {
+			width: 262px;
+			padding: 12.5px 21px 12.5px 30px;
+			.btn__img {
+				margin-left: 16px;
+			}
+		}
+	}
+}
