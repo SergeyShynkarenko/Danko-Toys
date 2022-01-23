@@ -1,17 +1,69 @@
 .product__card {
-
+	padding-bottom: 87px;
+	@media(max-width: 760px) {
+		padding-bottom: 50px;
+	}
 	.card__slider {
 		display: flex;
-		flex-wrap: wrap;
 		justify-content: space-between;
-		&-item {
-			height: 443px;
+		// display: flex;
+		// flex-wrap: wrap;
+		// justify-content: space-between;
+
+		.slick-arrow {
+			width: 46px;
+			height: 46px;
+			background-color: $white;
+			border-radius: 50%;
+			cursor: pointer;
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			top: -54px;
+			right: 0;
+			z-index: 5;
+			svg {
+				fill: #000;
+			}
+			&::before {
+				content: '';
+			}
+			&:hover {
+				background-color: $white;
+			}
+			&.slick-disabled {
+				background-color: $white;
+				svg {
+					fill: #cbcbcb;
+				}
+			}
+			&.slick-prev {
+				right: 66px;
+				left: auto;
+				background-color: $white;
+			}
+		}
+		.slick-list, .slick-track {
+			height: 100%;
+			width: 100%;
+		}
+
+		.card__inner {
+			position: relative;
+			
+			width: 100%;
+			height: 100%;
+			// height: 443px;
 			transition: all .3s;
 			border-radius: 20px;
+			cursor: pointer;
+			// &:not(:first-child) {
+			// 	margin-left: 22px;
+			// }
 			&:hover {
 				background-color: $white;
 				box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
-				
 				.item__content {
 					box-shadow: none;
 				}
@@ -31,36 +83,31 @@
 		}
 
 		.item__sale {
-			position: relative;
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			top: 20px;
+			left: 0;
 			span {
-				position: absolute;
-				left: 0;
-				top: 23px;
 				font-size: 14px;
 				line-height: 2;
 				font-weight: 600;
 				color: $white;
-				z-index: 2;
-				padding: 3px 20px 3px 17px;
-
-				&::before {
-					content: "";
-					background-color: #98C000;
-					left: 0;
-					width: 102px;
-					height: 34px;
-					position: absolute;;
-    			border-radius: 0 100px 100px 0;
-    			z-index: -1;
-				}
+				padding: 3px 20px;
+				background-color: #98C000;
+				width: 102px;
+				height: 34px;
+				border-radius: 0 100px 100px 0;
 				&:last-child {
 					top: 64px;
-					&::before {
-						content: "";
-						background-color: #E33C46;
-					}
+					background-color: #E33C46;
+					margin-top: 7px;
 				}
 			}
+		}
+
+		.sale {
+			margin-top: 0;			
 		}
 
 		.item__content {
@@ -102,4 +149,14 @@
 			}
 		}
 	}
+}
+
+.card__slider-item {
+	min-width: 0;
+  min-height: 0;
+  display: flex;
+  &:not(:first-child) {
+		margin-left: 22px;
+	}
+
 }

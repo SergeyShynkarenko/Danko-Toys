@@ -1,11 +1,13 @@
 .catalog {
 	padding: 122px 0 131px;
 	position: relative;
+	@media(max-width: 760px) {
+		padding: 50px 0 50px;
+	}
 	&__title {
 		margin-bottom: 40px;
 	}
 }
-
 
 .catalog__slider {
 	.slick-arrow {
