@@ -14,10 +14,10 @@
 			padding: 5px 0 4px 5px;
 		}
 		&-img {
-			@media(max-width: 760px) {			
+			@media(max-width: 760px) {
 				width: 120px;
 			}
-			@media(max-width: 480px) {			
+			@media(max-width: 480px) {
 				width: 73px;
 			}
 			&:last-child {
@@ -25,7 +25,7 @@
 				@media(max-width: 960px) {
 					margin-left: 7px;
 				}
-				@media(max-width: 760px) {			
+				@media(max-width: 760px) {
 					width: 100px;
 				}
 				@media(max-width: 480px) {
@@ -49,7 +49,7 @@
 		}
 		@media(max-width: 760px) {
 			display: none;
-			&.active {		
+			&.active {
 				display: block;
 				position: absolute;
 				top: 77px;
@@ -71,7 +71,6 @@
 		border-radius: 50px;
 		outline: none;
 		transition: all .3s ease;
-		cursor: pointer;
 		&:hover {
 			border: 1px solid #000;
 		}
@@ -89,7 +88,7 @@
 	}
 
 	.form__btn {
-		position: absolute; 
+		position: absolute;
 		top: 50%;
 		right: 21px;
 		border: none;
@@ -121,14 +120,13 @@
 	}
 
 	&__phone {
-		font-family: AvenirNextCyr, sans-serif;
 		@media(max-width: 985px) {
 			display: none;
 		}
 		.phone__number {
 			font-size: 22px;
-			font-weight: 800;
 			color: $textcolor;
+			font-family: 'AvenirBold';
 			line-height: 1.09;
 			@media(max-width: 1150px) {
 				font-size: 20px;
@@ -149,7 +147,7 @@
 		@media(max-width: 985px) {
 			display: none;
 		}
-		
+
 		.lang__link {
 			font-weight: 600;
 			text-transform: uppercase;
