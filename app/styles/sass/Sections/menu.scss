@@ -1,5 +1,25 @@
 .menu {
 	position: relative;
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+	}
+
+	&::before {
+		left: 0;
+		background-image: url('../images/dist/menu-bg.svg');
+		width: 265px;
+		height: 266px;
+	}
+	&::after {
+		background-image: url('../images/dist/menu-bg2.svg');
+		right: 0;
+		width: 480px;
+		height: 480px;
+	}
+
 	&__inner {
 		display: flex;
 	}
