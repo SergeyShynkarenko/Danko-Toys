@@ -1,7 +1,7 @@
 <h1>How to use</h1>
-<ul>
-	<ol>app - source code;</ol>
-	<ol>dist - build versin;</ol>
-	<ol>Install Node Modules: npm i;</ol>
-	<ol>Run: gulp;</ol>
-</ul>
+<ol>
+	<li>app - source code;</li>
+	<li>dist - build versin;</li>
+	<li>Install Node Modules: npm i</li>
+	<li>Run: gulp;</li>
+</ol>
