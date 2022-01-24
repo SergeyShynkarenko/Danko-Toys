@@ -4,13 +4,18 @@ $accent: #E33C46 // Accent Color
 $fontsize: 16px // Body Font Size
 $textcolor: #222 // Text Color
 $btncolor: #F28E00
+$dark: #000
 $red: #CD2024
 $background: #EFF7FC
 $white: #FFF
 $hover: #00A6EB
+$input: #CBCBCB
 $lineheight: 1.5 // Document Line Height
 $userfont: rawline, sans-serif // User Font Family
 $avenirRegular: AvenirRegular, sans-serif // Avenir Font Family
+$avenirHeavy: AvenirHeavy, sans-serif // Avenir Font Family
+$avenirBold: AvenirBold, sans-serif // Avenir Font Family
+// $AvenirNextCyr: AvenirNextCyr, sans-serif // Avenir Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 
 // Bootstrap compatible gutter variable => $gutter
@@ -23,8 +28,6 @@ $gutter: $grid-gutter-width
 @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
 @import '../../libs/slick'
 @import '../../libs/slick-theme'
-// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
-// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
 
 // FONTS LOAD SECTION
 
@@ -41,8 +44,8 @@ $gutter: $grid-gutter-width
 @include font('rawline', normal, 700, '../fonts/rawline-700.woff2')
 
 @include font('AvenirRegular', normal, 400, '../fonts/AvenirNextCyr-Regular.woff')
-@include font('AvenirBold', normal, 700, '../fonts/AvenirNextCyr-Bold.woff')
-@include font('AvenirHeavy', normal, 800, '../fonts/AvenirNextCyr-Heavy.woff')
+@include font('AvenirHeavy', normal, 700, '../fonts/AvenirNextCyr-Heavy.woff')
+@include font('AvenirBold', normal, 800, '../fonts/AvenirNextCyr-Bold.woff')
 
 // GENERAL DOCUMENT STYLES
 
@@ -93,28 +96,43 @@ a
 
 .button
 	display: inline-block
-	padding: 14px 31px 14px 28.5px
+	padding: 14px 30px 14px 24px
 	background-color: $btncolor
 	color: $white
 	font-size: 16px
 	line-height: 1.3
-	font-weight: 700
-	font-family: $avenirRegular
+	font-family: $avenirBold
 	box-shadow: 0px 15px 25px -9px rgba(26, 57, 67, 0.1)
 	border-radius: 50px
 	letter-spacing: -0.01em
 	&:hover
 		color: $white
-		background-color: #ECBC1F
-
+		background-color: #ff9c10
 
 .title
 	font-size: 24px
 	line-height: 1.08
 	font-weight: 800
 	text-transform: uppercase
-	font-family: 'AvenirBold'
+	font-family: $avenirBold
 	margin-bottom: 40px
 	@media(max-width: 480px)
 		font-size: 15px
 		line-height: 1.5
+
+.slick-dots 
+	bottom: -40px
+	li button::before 
+		content: ""
+		width: 10px
+		height: 10px
+		background-color: #000
+		opacity: .25
+		border-radius: 50%
+		&.active 
+		  opacity: .75
+		  background-color: #000
+		  width: 10px
+		  height: 10px
+		  border-radius: 50%
+		   

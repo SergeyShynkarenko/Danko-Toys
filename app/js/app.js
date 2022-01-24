@@ -38,7 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
   	slidesToScroll: 1,
   	arrows: true,
  		prevArrow: arrowPrev,
-		nextArrow: arrowNext
+		nextArrow: arrowNext,
+		responsive: [
+	    {
+	      breakpoint: 480,
+	      settings: {
+	      	arrows: false,
+	      	dots: true
+	      }
+	    },
+	  ]
 	});
 
 	$('.catalog__slider').slick({
@@ -47,13 +56,22 @@ document.addEventListener('DOMContentLoaded', () => {
   	slidesToScroll: 1,
   	arrows: true,
  		prevArrow: arrowPrev,
-		nextArrow: arrowNext
+		nextArrow: arrowNext,
+		responsive: [
+	    {
+	      breakpoint: 480,
+	      settings: {
+	      	arrows: false,
+	      	dots: true
+	      }
+	    },
+	  ]
 	});
 
 	$('.card__slider').slick({
 		infinite: false,
 		slidesToShow: 4,
-  	slidesToScroll: 4,
+  	slidesToScroll: 1,
   	variableWidth: true,
   	arrows: true,
  		prevArrow: arrowPrev,
@@ -63,24 +81,19 @@ document.addEventListener('DOMContentLoaded', () => {
 				breakpoint: 1250,
 				settings: {
 					slidesToShow: 3,
-  				slidesToScroll: 3,
-				}
-			},
-			{
-				breakpoint: 767,
-				settings: {
-					slidesToShow: 1,
   				slidesToScroll: 1,
 				}
 			},
-			{
-				breakpoint: 300,
-				settings: {
-					slidesToShow: 1,
+	    {
+	      breakpoint: 480,
+	      settings: {
+	      	slidesToShow: 1,
   				slidesToScroll: 1,
-				}
-			}
+	      	arrows: false,
+	      	dots: true
+	      }
+	    },
 		]
 	});
 
-})
+});

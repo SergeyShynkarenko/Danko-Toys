@@ -1,11 +1,10 @@
 .for-children {
   padding-bottom: 75px;
   position: relative;
-
   @media(max-width: 760px) {
     padding-bottom: 25px;
   }
-
+  
   &::before,
   &::after {
     content: "";
@@ -19,7 +18,6 @@
     @media(max-width: 767px) {
       display: none;
     }
-
   }
 
   &::before {
@@ -59,9 +57,9 @@
     color: #212121;
 
     &.title__small {
+      font-family: $avenirBold;
       font-size: 16px;
       line-height: 1.1;
-      font-weight: 800;
       color: #3C3C3C;
     }
   }

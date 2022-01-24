@@ -38,7 +38,7 @@
 	&__form {
 		position: relative;
 		width: 510px;
-		@media(max-width: 1150px) {
+		@media(max-width: 1180px) {
 			width: 320px;
 		}
 		@media(max-width: 985px) {
@@ -67,15 +67,15 @@
 	.form__input {
 		padding: 15px 60px 15px 20px;
 		width: 100%;
-		border: 1px solid #CBCBCB;
+		border: 1px solid $input;
 		border-radius: 50px;
 		outline: none;
 		transition: all .3s ease;
 		&:hover {
-			border: 1px solid #000;
+			border: 1px solid $dark;
 		}
 		&::placeholder {
-			color: #CBCBCB;
+			color: $input;
 		}
 		@media(max-width: 760px) {
 			font-size: 15px;
@@ -102,10 +102,10 @@
 		transition: all .3s;
 		width: 19px;
 		height: 20px;
-		fill: #CBCBCB;
+		fill: $input;
 		transition: all .3s ease;
 		&:hover {
-			fill: #000;
+			fill: $dark;
 		}
 		@media(max-width: 760px) {
 			fill:#767676;
@@ -116,7 +116,6 @@
 			width: 12px;
 			height: 12px;
 		}
-
 	}
 
 	&__phone {
@@ -124,21 +123,27 @@
 			display: none;
 		}
 		.phone__number {
+			display: block;
 			font-size: 22px;
-			color: $textcolor;
-			font-family: 'AvenirBold';
 			line-height: 1.09;
+			color: $textcolor;
+			font-family: $avenirBold;
 			@media(max-width: 1150px) {
 				font-size: 20px;
 			}
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 		.phone__text {
-			display: block;
-			color: #00A6EB;
+			color: $hover;
 			line-height: 1.1;
 			text-decoration: none;
-			border-bottom: 1px dashed #00A6EB;
+			border-bottom: 1px dashed $hover;
 			margin-top: 8px;
+			&:hover {
+				border-bottom: 1px solid $hover;
+			}
 		}
 	}
 
@@ -152,8 +157,13 @@
 			font-weight: 600;
 			text-transform: uppercase;
 			position: relative;
-			color: #CBCBCB;
+			color: $input;
 			opacity: 0.5;
+			transition: all .3s ease;
+			&:hover {
+				color: $textcolor;
+				opacity: 1;
+			}
 			@media(max-width: 870px) {
 				font-size: 15px;
 			}
@@ -176,7 +186,7 @@
 					height: 15px;
 					top: 50%;
 					transform: translateY(-50%);
-					background-color: #000;
+					background-color: $dark;
 				}
 			}
 		}
@@ -208,6 +218,9 @@
 				fill: $white;
 				width: 19px;
 				height: 19px;
+				&:hover {
+					fill: $white;
+				}
 			}
 			@media(max-width: 760px) {
 				display: flex;

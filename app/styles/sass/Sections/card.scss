@@ -1,9 +1,10 @@
-.product__card {
+.card {
 	padding-bottom: 87px;
 	@media(max-width: 760px) {
 		padding-bottom: 50px;
 	}
-	.card__slider {
+
+	&__slider {
 		display: flex;
 		justify-content: space-between;
 
@@ -21,7 +22,7 @@
 			right: 0;
 			z-index: 5;
 			svg {
-				fill: #000;
+				fill: $dark;
 			}
 			&::before {
 				content: '';
@@ -32,7 +33,7 @@
 			&.slick-disabled {
 				background-color: $white;
 				svg {
-					fill: #cbcbcb;
+					fill: $input;
 				}
 			}
 			&.slick-prev {
@@ -44,14 +45,13 @@
 
 		&-item {
 			position: relative;
-			// height: 443px;
 			transition: all .3s;
 			border-radius: 20px;
 			cursor: pointer;
 			&:not(:first-child) {
 				margin-left: 22px;
 			}
-			&:hover {
+			&.slick-active:hover {
 				background-color: $white;
 				box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
 				.item__content {

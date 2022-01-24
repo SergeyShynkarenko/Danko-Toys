@@ -50,8 +50,7 @@
 		&-title {
 			font-size: 18px;
 			line-height: 1.1;
-			font-weight: 700;
-			font-family: Avenir Next Cyr, sans-serif;		
+			font-family: $avenirHeavy;		
 			margin-bottom: 20px;
 		}
 
@@ -60,12 +59,20 @@
 				margin-bottom: 10px;
 				&.item__phone-text {
 					margin: 10px 0 45px;
+					
 				}
 			}
 
 			&__link {
 				color: $white;
 				font-size: 13px;
+				letter-spacing: 0.02em;
+				border-bottom: 1px solid transparent;
+				transition: all .3s ease;
+				&:hover {
+					text-decoration: none;
+					border-bottom: 1px solid $white;
+				}
 				&.link__phone {
 					font-size: 18px;
 					line-height: 1.1;
@@ -75,14 +82,35 @@
 					font-size: 12px;
 					line-height: 1.1;
 					border-bottom: 1px dashed $white;
+					transition: all .3s ease;
+					&:hover {
+						text-decoration: none;
+						border-bottom: 1px solid $white;
+					}
 				}
 			}
 		}
 
 		&-social {
 			display: flex;
-			.social__item:not(:first-child) {
-				margin-left: 20px;
+			.social__item {
+				transition: all .3s ease;
+				border-radius: 50%;
+				&:hover {
+					background-color: $red;
+					width: 40px;
+					height: 40px;
+				}
+				&:not(:first-child) {
+					margin-left: 20px;
+				}
+			}
+			.social__link {
+				.icon {
+					width: 40px;
+					height: 40px;
+					fill: $white;
+				}
 			}
 		}
 	}
@@ -95,13 +123,24 @@
 			justify-content: space-between;
 			color: $white;
 			font-size: 12px;
+			@media(max-width: 520px) {
+				display: flex;
+				flex-direction: column;
+			}
 		}
 		&-copyright {
 			margin-bottom: 0;
+			@media(max-width: 520px) {
+				margin-bottom: 10px;
+			}
 		}
 		&-site {
 			line-height: 1.4;
+			display: flex;
+			align-items: flex-end;
+			span {
+				margin-right: 12px;
+			}
 		}
 	}
-
 }
